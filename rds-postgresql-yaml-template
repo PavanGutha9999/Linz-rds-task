@@ -20,7 +20,7 @@ Parameters:
   DBInstanceType:
     Type: String
     Description: RDS instance type
-    Default: db.t3.large # Requirement as of step 4 (The safe default)
+    Default: db.m5.large # Requirement as of step 4 (The safe default)
 
   DBUsername:
     Type: String
