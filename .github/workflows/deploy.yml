@@ -31,7 +31,8 @@ jobs:
           template: rds-postgresql-yaml-template # Ensure this matches your file name!
           no-fail-on-empty-changeset: "1"
           parameter-overrides: >-
-            VpcId=${{ vars.VPC_ID }},
-            SubnetIds=${{ vars.SUBNET_IDS }},
+            VPCID=${{ vars.VPC_ID }},
+            Subnet1=${{ vars.DB_SUBNET_A }},
+            Subnet2=${{ vars.DB_SUBNET_B }},
             DBPassword=${{ secrets.POSTGRESQLDB_PASSWORD }}
 
