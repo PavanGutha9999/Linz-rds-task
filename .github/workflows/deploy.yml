@@ -33,4 +33,5 @@ jobs:
           parameter-overrides: >-
             VpcId=${{ vars.VPC_ID }},
             SubnetIds=${{ vars.SUBNET_IDS }},
-            MasterUserPassword=${{ secrets.POSTGRESQLDB_PASSWORD }}
+            DBPassword=${{ secrets.POSTGRESQLDB_PASSWORD }}
+
